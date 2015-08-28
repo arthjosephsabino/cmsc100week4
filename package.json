@@ -1,0 +1,16 @@
+{
+  "name": "CMSC100Week2",
+  "version": "0.1.0",
+  "description": "Basic Nodejs Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthjoseph Sabino",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.3",
+    "body-parser": "~1.13.3",
+    "method-override": "~2.3.5"
+  }
+}
