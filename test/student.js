@@ -34,7 +34,7 @@ var request = require ('supertest'),
 				request(url)
 				.post('/students/')
 				.send({
-					'studNo':'2013-12120',
+					'studNo':'2013-12125',
 					'name':'Toyang',
 					'bdate':'1900-09-09'
 				
@@ -43,6 +43,9 @@ var request = require ('supertest'),
 					if(err) throw err;
 					res.should.have.status(200);
 					res.body.should.be.an.instanceOf(Object);
+					res.body.should.have.property('studNo');
+					res.body.should.have.property('name');
+					res.body.should.have.property('bdate');		
 					done();
 				});
 			});
